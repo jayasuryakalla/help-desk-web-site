@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anveshana-2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-wrapper">
+        <div class="overlay-dark"></div>
+        <div class="particles"></div>
+    </div>
+
+    <!-- Header / Hero -->
+    <header class="floaty">
+        <img src="anveshana_logo.png" alt="Anveshana Logo" class="logo-glow" style="width: 250px;">
+        <h1 class="neon-text" style="font-size: 3rem; margin-top: 1rem;">ANVESHANA-2026</h1>
+        <p style="color: var(--text-muted); letter-spacing: 3px;">IN SEARCH FOR TALENT</p>
+    </header>
+
+    <!-- Main Navigation / Quick Links -->
+    <main class="container">
+
+        <!-- Day Toggle -->
+        <div class="day-toggle-container glass-panel" style="padding: 1rem;">
+            <button class="day-btn active" onclick="window.location.href='events.html'">EXPLORE EVENTS</button>
+            <button class="day-btn" onclick="window.location.href='map2.html'">CAMPUS MAP</button>
+        </div>
+
+        <!-- Featured / Intro Section -->
+        <div class="glass-panel" style="padding: 2rem; text-align: center; margin-bottom: 2rem;">
+            <h2 class="neon-text">Welcome to the Future</h2>
+            <p style="margin: 1rem 0; color: #ddd; line-height: 1.6;">
+                Step into a world where gravity is just a suggestion. Two days of technical innovation,
+                cultural explosion, and mind-bending fun await you.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <div class="info-item" style="min-width: 150px;">
+                    <span class="info-label">Day 1</span>
+                    <span class="info-value">Technical</span>
+                </div>
+                <div class="info-item" style="min-width: 150px;">
+                    <span class="info-label">Day 2</span>
+                    <span class="info-value">Cultural</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Grid -->
+        <div class="event-grid">
+            <div class="event-card glass-panel" onclick="window.location.href='events.html'">
+                <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+                <div class="card-title">Full Schedule</div>
+                <div class="card-dept">Browse All Events</div>
+            </div>
+
+            <div class="event-card glass-panel" onclick="window.location.href='map2.html'">
+                <div class="card-icon"><i class="fas fa-map-marked-alt"></i></div>
+                <div class="card-title">Event Map</div>
+                <div class="card-dept">Find Your Way</div>
+            </div>
+
+            <div class="event-card glass-panel" onclick="window.location.href='help.html'">
+                <div class="card-icon"><i class="fas fa-headset"></i></div>
+                <div class="card-title">Help Desk</div>
+                <div class="card-dept">Need Assistance?</div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
