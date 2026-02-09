@@ -1,58 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events - Anveshana-2026</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="background-wrapper">
-        <div class="overlay-dark"></div>
-        <div class="particles"></div>
+      <div class="overlay-dark"></div>
+      <div class="particles"></div>
     </div>
 
     <!-- Back Button -->
-    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Home</a>
+    <a href="index.html" class="back-btn"
+      ><i class="fas fa-arrow-left"></i> Home</a
+    >
 
-    <header>
-        <h1 class="neon-text">Event Schedule</h1>
+    <!-- Header -->
+    <header class="hero-section" style="min-height: 20vh; padding-top: 4rem">
+      <h1 class="hero-title" style="font-size: 2rem">Event Schedule</h1>
+      <p class="hero-tagline">EXPLORE THE FUTURE</p>
     </header>
 
     <main class="container">
+      <!-- Day Toggle -->
+      <div
+        class="day-toggle-container glass-panel"
+        style="
+          padding: 0.5rem;
+          margin-bottom: 2rem;
+          display: inline-flex;
+          align-self: center;
+        "
+      >
+        <button class="day-btn active" onclick="toggleDay(1)">
+          Day 1 (Tech)
+        </button>
+        <button class="day-btn" onclick="toggleDay(2)">Day 2 (Cultural)</button>
+      </div>
 
-        <!-- Day Toggle -->
-        <div class="day-toggle-container">
-            <button class="day-btn active" onclick="toggleDay(1)">Day 1 (Tech)</button>
-            <button class="day-btn" onclick="toggleDay(2)">Day 2 (Cult)</button>
+      <!-- Day 1 Section -->
+      <div id="day1-section">
+        <h2
+          style="
+            border-bottom: 1px solid var(--accent-primary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-primary);
+          "
+        >
+          Day 1: Technical Events
+        </h2>
+        <div id="day1-grid">
+          <!-- Javascript will populate this -->
         </div>
+      </div>
 
-        <!-- Day 1 Section -->
-        <div id="day1-section">
-            <h2 class="neon-text"
-                style="border-bottom: 2px solid var(--primary-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">
-                Day 1: Technical Events</h2>
-            <div id="day1-grid" class="event-grid">
-                <!-- Javascript will populate this -->
-            </div>
+      <!-- Day 2 Section -->
+      <div id="day2-section" style="margin-top: 4rem">
+        <h2
+          style="
+            border-bottom: 1px solid var(--accent-secondary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-secondary);
+          "
+        >
+          Day 2: Cultural & Fun
+        </h2>
+        <div id="day2-grid">
+          <!-- Javascript will populate this -->
         </div>
+      </div>
 
-        <!-- Day 2 Section -->
-        <div id="day2-section" style="margin-top: 4rem;">
-            <h2 class="neon-text"
-                style="color: var(--secondary-color); border-bottom: 2px solid var(--secondary-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem; text-shadow: 0 0 10px var(--secondary-color);">
-                Day 2: Cultural & Fun</h2>
-            <div id="day2-grid" class="event-grid">
-                <!-- Javascript will populate this -->
-            </div>
-        </div>
-
+      <!-- Spacer -->
+      <div style="height: 100px"></div>
     </main>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

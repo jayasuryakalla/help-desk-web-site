@@ -1,41 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Campus Map - Anveshana-2026</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="background-wrapper">
-        <div class="overlay-dark"></div>
-        <div class="particles"></div>
+      <div class="overlay-dark"></div>
+      <div class="particles"></div>
     </div>
 
-    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Home</a>
+    <!-- Back Button -->
+    <a href="index.html" class="back-btn"
+      ><i class="fas fa-arrow-left"></i> Home</a
+    >
 
-    <header>
-        <h1 class="neon-text">Campus Navigation</h1>
+    <!-- Header -->
+    <header class="hero-section" style="min-height: 20vh; padding-top: 6rem">
+      <h1 class="hero-title" style="font-size: 2rem">Campus Map</h1>
+      <p class="hero-tagline">NAVIGATE THE VENUE</p>
     </header>
 
     <main class="container">
+      <div
+        id="map-container"
+        class="glass-panel"
+        style="overflow: hidden; position: relative"
+      >
+        <div id="map" style="z-index: 1"></div>
 
-        <div id="map-container" class="glass-panel">
-            <div id="map"></div>
+        <!-- Custom Map Navigation Controls -->
+        <div class="map-controls">
+          <button onclick="mapZoomIn()"><i class="fas fa-plus"></i></button>
+          <button onclick="mapZoomOut()"><i class="fas fa-minus"></i></button>
         </div>
+      </div>
 
-        <div class="glass-panel" style="margin-top: 1rem; padding: 1rem; text-align: center;">
-            <p style="color: var(--text-muted);">Click on any event in the "Events" page to highlight its location.</p>
-        </div>
+      <div
+        class="glass-panel"
+        style="margin-top: 1rem; padding: 1rem; text-align: center"
+      >
+        <p style="color: var(--text-secondary); font-size: 0.9rem">
+          <i class="fas fa-info-circle"></i> Drag to pan. Pinch to zoom.
+        </p>
+      </div>
 
+      <!-- Spacer for Bottom Nav -->
+      <div style="height: 80px"></div>
     </main>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="index.html" class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="events.html" class="nav-item">
+        <i class="fas fa-calendar-day"></i>
+        <span>Events</span>
+      </a>
+      <a href="map2.html" class="nav-item active">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Map</span>
+      </a>
+      <a href="#" class="nav-item">
+        <i class="fas fa-ticket-alt"></i>
+        <span>Register</span>
+      </a>
+      <a href="help.html" class="nav-item">
+        <i class="fas fa-info-circle"></i>
+        <span>Help</span>
+      </a>
+    </nav>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="script.js"></script>
-</body>
-
+    <script>
+      // Simple zoom helpers if we want external buttons
+      function mapZoomIn() {
+        if (window.mapInstance) window.mapInstance.zoomIn();
+      }
+      function mapZoomOut() {
+        if (window.mapInstance) window.mapInstance.zoomOut();
+      }
+    </script>
+  </body>
 </html>
