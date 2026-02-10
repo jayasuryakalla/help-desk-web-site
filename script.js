@@ -888,7 +888,7 @@ function initMap() {
 
   const map = L.map("map", {
     crs: L.CRS.Simple,
-    minZoom: -1,
+    minZoom: -1.6,
     maxZoom: 2,
     zoomControl: false,
     attributionControl: false,
@@ -899,9 +899,9 @@ function initMap() {
 
   const bounds = [
     [0, 0],
-    [1000, 1000],
-  ]; // Coordinate system for the image
-  const image = L.imageOverlay("campus_map_v2.jpg", bounds).addTo(map);
+    [1542, 866],
+  ]; // Coordinate system for the image (Height, Width)
+  const image = L.imageOverlay("campus_view.png", bounds).addTo(map);
 
   map.fitBounds(bounds);
 
