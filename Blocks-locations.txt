@@ -1,0 +1,6 @@
+IT & AIML: 101 -> co-ords : [967,70]
+CSE,CST,CSM,CSD,CIC: 102 -> co-ords : [986, 364]
+ECE,ECT,CE,Diploma : 103 -> co-ords : [1198, 358]
+EEE,MBA : 104 -> co-ords : [1386, 209]
+ME : 105 -> co-ords : [1171, 137]
+Library : 106 -> co-ords : [1407, 349]

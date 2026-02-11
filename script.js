@@ -11,6 +11,7 @@ const rawData = {
       student: "M Yaswanth",
       student_mobile: "9959189669",
       venue: "22310",
+      Block: "103",
     },
     {
       dept: "EEE",
@@ -19,6 +20,7 @@ const rawData = {
       student: "P. Pravallika",
       student_mobile: "6309190446",
       venue: "11101",
+      Block: "104",
     },
     {
       dept: "ME",
@@ -27,6 +29,7 @@ const rawData = {
       student: null,
       student_mobile: null,
       venue: null,
+      Block: "105",
     },
     {
       dept: "ECE & ECT",
@@ -35,6 +38,7 @@ const rawData = {
       student: "N. Pavandurga Kumar",
       student_mobile: "6303778545",
       venue: "22304",
+      Block: "103",
     },
     {
       dept: "CSE,CST",
@@ -43,6 +47,7 @@ const rawData = {
       student: "B Bhargav",
       student_mobile: null,
       venue: null,
+      Block: "102",
     },
     {
       dept: "CSM,CSD,CIC",
@@ -51,6 +56,7 @@ const rawData = {
       student: null,
       student_mobile: null,
       venue: null,
+      Block: "102",
     },
     {
       dept: "IT & AIML",
@@ -59,6 +65,7 @@ const rawData = {
       student: null,
       student_mobile: null,
       venue: null,
+      Block: "101",
     },
     {
       dept: "Diploma",
@@ -67,6 +74,7 @@ const rawData = {
       student: "D Sai Tanuja",
       student_mobile: "7981023135",
       venue: "22008",
+      Block: "103",
     },
   ],
   "Technical Quiz": [
@@ -77,6 +85,7 @@ const rawData = {
       student: "P Karthik",
       student_mobile: "7396183887",
       venue: "22307",
+      Block: "103",
     },
     {
       dept: "EEE",
@@ -85,6 +94,7 @@ const rawData = {
       student: "A L S Jyotirmayi",
       student_mobile: "9640057696",
       venue: "11002",
+      Block: "104",
     },
     {
       dept: "ME",
@@ -93,6 +103,7 @@ const rawData = {
       student: null,
       student_mobile: null,
       venue: null,
+      Block: "105",
     },
     {
       dept: "ECE & ECT",
@@ -101,6 +112,7 @@ const rawData = {
       student: "K. Nikhil",
       student_mobile: "6304489622",
       venue: "22208",
+      Block: "103",
     },
     {
       dept: "CSE,CST",
@@ -109,6 +121,7 @@ const rawData = {
       student: "V Dhatri",
       student_mobile: "8712219580",
       venue: null,
+      Block: "102",
     },
     {
       dept: "CSM,CSD,CIC",
@@ -117,6 +130,7 @@ const rawData = {
       student: null,
       student_mobile: null,
       venue: null,
+      Block: "102",
     },
     {
       dept: "IT & AIML",
@@ -125,6 +139,7 @@ const rawData = {
       student: null,
       student_mobile: null,
       venue: null,
+      Block: "101",
     },
     {
       dept: "Diploma",
@@ -133,6 +148,7 @@ const rawData = {
       student: "Y Karthik",
       student_mobile: "9676477300",
       venue: "22007",
+      Block: "103",
     },
   ],
   "Project Expo": [
@@ -143,6 +159,7 @@ const rawData = {
       student: "K V S S Swarupini",
       student_mobile: "9573234978",
       venue: null,
+      Block: "103",
     },
     {
       dept: "EEE",
@@ -151,6 +168,7 @@ const rawData = {
       student: "B. Shanmukha Sridhar",
       student_mobile: "9381681096",
       venue: null,
+      Block: "104",
     },
     {
       dept: "ME",
@@ -159,6 +177,7 @@ const rawData = {
       student: "U. Akhil",
       student_mobile: "9014941059",
       venue: null,
+      Block: "105",
     },
     {
       dept: "ECE & ECT",
@@ -167,6 +186,7 @@ const rawData = {
       student: "A.Eswari Mounika",
       student_mobile: "9030193242",
       venue: null,
+      Block: "103",
     },
     {
       dept: "CSE,CST",
@@ -175,6 +195,7 @@ const rawData = {
       student: null,
       student_mobile: null,
       venue: null,
+      Block: "102",
     },
     {
       dept: "CSM,CSD,CIC",
@@ -183,6 +204,7 @@ const rawData = {
       student: null,
       student_mobile: null,
       venue: null,
+      Block: "102",
     },
     {
       dept: "IT & AIML",
@@ -191,6 +213,7 @@ const rawData = {
       student: null,
       student_mobile: null,
       venue: null,
+      Block: "101",
     },
     {
       dept: "Diploma",
@@ -199,6 +222,7 @@ const rawData = {
       student: "R Lakshmi Narasimha",
       student_mobile: "9491927115",
       venue: "22009",
+      Block: "103",
     },
   ],
   "Poster Presentation": [
@@ -209,6 +233,7 @@ const rawData = {
       student: "G Vijay Sai Durga",
       student_mobile: "8897931209",
       venue: null,
+      Block: "103",
     },
     {
       dept: "EEE",
@@ -217,6 +242,7 @@ const rawData = {
       student: "N. Kavyasri Satya Geetha",
       student_mobile: "8919386883",
       venue: null,
+      Block: "104",
     },
     {
       dept: "ME",
@@ -225,6 +251,7 @@ const rawData = {
       student: null,
       student_mobile: null,
       venue: null,
+      Block: "105",
     },
     {
       dept: "ECE & ECT",
@@ -233,6 +260,7 @@ const rawData = {
       student: "K.Dhana srivalli",
       student_mobile: "9398361405",
       venue: "22115",
+      Block: "103",
     },
     {
       dept: "CSE,CST",
@@ -241,6 +269,7 @@ const rawData = {
       student: null,
       student_mobile: null,
       venue: null,
+      Block: "102",
     },
     {
       dept: "CSM,CSD,CIC",
@@ -249,6 +278,7 @@ const rawData = {
       student: "B. Joy",
       student_mobile: "6301966534",
       venue: "23210",
+      Block: "102",
     },
     {
       dept: "IT & AIML",
@@ -257,6 +287,7 @@ const rawData = {
       student: null,
       student_mobile: null,
       venue: null,
+      Block: "101",
     },
     {
       dept: "Diploma",
@@ -265,6 +296,7 @@ const rawData = {
       student: "N Rama Durga",
       student_mobile: "9494344491",
       venue: "22006",
+      Block: "103",
     },
   ],
   "Cultural Events": {
@@ -273,60 +305,70 @@ const rawData = {
       faculty_mobile: "8897392492",
       student: "E.Likitha",
       student_mobile: "7569744529",
+      Block: "106",
     },
     "Dance Duet": {
       faculty: null,
       faculty_mobile: null,
       student: null,
       student_mobile: null,
+      Block: "106",
     },
     "Dance Group": {
       faculty: "Mrs.N.Sannajaji",
       faculty_mobile: "9494599822",
       student: "CH.Navya",
       student_mobile: "7995274327",
+      Block: "106",
     },
     Singing: {
       faculty: "Mrs.Bharathi",
       faculty_mobile: "7893552837",
       student: "P.Keerthi",
       student_mobile: "7981631166",
+      Block: "106",
     },
     "Ramp Walk": {
       faculty: "Pujitha",
       faculty_mobile: "6281331143",
       student: "Keethana",
       student_mobile: null,
+      Block: "106",
     },
     Photography: {
       faculty: "Mr.Venu",
       faculty_mobile: "8500714776",
       student: "P.Sai kiran",
       student_mobile: "8977487337",
+      Block: "106",
     },
     Mime: {
       faculty: "Mrs.B.Anusha",
       faculty_mobile: "9959059680",
       student: "V.Mounika",
       student_mobile: "9032017749",
+      Block: "106",
     },
     "Video Song Dedication": {
       faculty: "Durga Bhavani",
       faculty_mobile: "9705857643",
       student: "G.Navyasri",
       student_mobile: "8019347858",
+      Block: "106",
     },
     "I Got Talent": {
       faculty: "Mr.Ravi",
       faculty_mobile: "9652731209",
       student: "K.Krishna Teja",
       student_mobile: "9963614237",
+      Block: "106",
     },
     "Short Film": {
       faculty: "Mr.T.Gopu",
       faculty_mobile: "9487059842",
       student: "D.Dhanush Kumar",
       student_mobile: "8247275809",
+      Block: "106",
     },
   },
   "Central Events": [
@@ -336,6 +378,7 @@ const rawData = {
       faculty_mobile: null,
       student: null,
       student_mobile: null,
+      Block: "106",
     },
     {
       event: "Treasure Hunt",
@@ -343,6 +386,7 @@ const rawData = {
       faculty_mobile: null,
       student: null,
       student_mobile: null,
+      Block: "106",
     },
     {
       event: "Tambola",
@@ -350,6 +394,7 @@ const rawData = {
       faculty_mobile: null,
       student: null,
       student_mobile: null,
+      Block: "106",
     },
     {
       event: "Lottery",
@@ -357,6 +402,7 @@ const rawData = {
       faculty_mobile: "8985986910",
       student: "S. Tanish Kumar",
       student_mobile: "7989878233",
+      Block: "106",
     },
     {
       event: "DJ Night",
@@ -364,6 +410,7 @@ const rawData = {
       faculty_mobile: null,
       student: null,
       student_mobile: null,
+      Block: "106",
     },
   ],
   "Coding & Gaming Events": {
@@ -373,31 +420,28 @@ const rawData = {
       student: "K D S Lavanya",
       student_mobile: "9390174748",
       venue: null,
+      Block: "106",
     },
     "Blind Code": {
       faculty: "P Saravan Kumar",
       faculty_mobile: "7904257958",
       student: "K Eakshita Vandana",
       student_mobile: "9390817281",
+      Block: "102",
     },
     "Online Gaming": {
       faculty: "P Krishnamoorthy",
       faculty_mobile: "9942776343",
       student: "K D S Charan",
       student_mobile: "9573669044",
+      Block: "102",
     },
     "Code Relay": {
       faculty: "G.Prasanth Kumar",
       faculty_mobile: "8897199935",
       student: "P Ishwarya",
       student_mobile: "9661074173",
-    },
-    "AI Prompt Battle": {
-      faculty: "Mrs. N Mounica",
-      faculty_mobile: "9063662255",
-      student: "K Saranya",
-      student_mobile: "8121156772",
-      venue: "23203",
+      Block: "102",
     },
     "Puzzle of 3": {
       faculty: "Mr. K Viswa Prasad",
@@ -405,6 +449,7 @@ const rawData = {
       student: "K. Sushma",
       student_mobile: "9505959199",
       venue: "23214",
+      Block: "102",
     },
     "Mindora Arena": {
       faculty: "Mr. K Suresh",
@@ -412,6 +457,7 @@ const rawData = {
       student: "K Hari",
       student_mobile: "9959233942",
       venue: "23213",
+      Block: "102",
     },
     "Silicon-TeKLogic Conclave": {
       faculty: "Mrs.N.Kusuma",
@@ -419,6 +465,7 @@ const rawData = {
       student: "G.Uma Maheswari",
       student_mobile: "9912792455",
       venue: "22301",
+      Block: "103",
     },
     "Circuit Race": {
       faculty: "Mr.S.N.V.P.Raviteja",
@@ -426,6 +473,7 @@ const rawData = {
       student: "K.Venkata Lalithya",
       student_mobile: "7981232429",
       venue: "22101",
+      Block: "103",
     },
     Electrochase: {
       faculty: "Mr.G V Apparao",
@@ -433,6 +481,7 @@ const rawData = {
       student: "P. Abhinayasri",
       student_mobile: "7036985897",
       venue: "11007",
+      Block: "104",
     },
     "Power Play": {
       faculty: "Mr. M K Chaitanya",
@@ -440,13 +489,15 @@ const rawData = {
       student: "Ch. Eswar Kumar",
       student_mobile: "6302426855",
       venue: "11009",
+      Block: "104",
     },
     "Model Making": {
       faculty: "M Venu",
       faculty_mobile: "8500714776",
       student: "B Surya Manikinata",
       student_mobile: "8978142472",
-      venue: "32004",
+      venue: "22004",
+      Block: "103",
     },
     Cadathon: {
       faculty: "D Ajay Kumar",
@@ -454,12 +505,14 @@ const rawData = {
       student: "B Prabhu Suresh",
       student_mobile: "8790056695",
       venue: "22312",
+      Block: "103",
     },
     Cadveshana: {
       faculty: "Ch. Venkateswara Rao",
       faculty_mobile: "7981717782",
       student: null,
       student_mobile: null,
+      Block: "105",
     },
   },
   "MBA Events": [
@@ -470,6 +523,7 @@ const rawData = {
       student: "S.Krishna Kumari",
       student_mobile: "6304799221",
       venue: "11202",
+      Block: "104",
     },
     {
       event: "Stock Game",
@@ -478,6 +532,7 @@ const rawData = {
       student: "M.Sureka",
       student_mobile: "9542189119",
       venue: "11204",
+      Block: "104",
     },
     {
       event: "Business Quiz",
@@ -486,6 +541,7 @@ const rawData = {
       student: "S.Srinivas",
       student_mobile: "9346446707",
       venue: "11205",
+      Block: "104",
     },
   ],
   "DCME Events": [
@@ -496,6 +552,7 @@ const rawData = {
       student: "K Dharahas",
       student_mobile: "6304166013",
       venue: "22008",
+      Block: "103",
     },
   ],
   "DECE Events": [
@@ -506,89 +563,31 @@ const rawData = {
       student: "K Jaswitha",
       student_mobile: "9959969968",
       venue: "22009",
+      Block: "103",
     },
   ],
+};
+
+const getCoords = (venue) => {
+  if (!venue || venue.toLowerCase() === "null") return null;
+
+  // coordinates
+  const fixedVenueCoords = {
+    101: [967, 70],
+    102: [986, 364],
+    103: [1198, 358],
+    104: [1386, 209],
+    105: [1171, 137],
+    106: [1407, 349],
+  };
+
+  return fixedVenueCoords[venue] || [500, 500];
 };
 
 function processRawData(data) {
   const events = [];
   let idCounter = 1;
   const venueCoords = {};
-
-  const getCoords = (venue) => {
-    if (!venue || venue.toLowerCase() === "null") return null;
-
-    // Fixed coordinates from previous version + new ones assigned
-    const fixedVenueCoords = {
-      22310: [764, 334],
-      22311: [764, 334],
-      "FM LAB": [160, 360],
-      22302: [315, 249],
-      "SOM Lab": [200, 380],
-      "CT Lab": [354, 677],
-      11105: [129, 97],
-      11106: [129, 97],
-      11202: [129, 97],
-      11205: [129, 97],
-      11206: [129, 97],
-      11103: [129, 97],
-      12209: [382, 910],
-      "CAD LAB": [380, 470],
-      Workshop: [400, 480],
-      12108: [382, 910],
-      13208: [382, 910],
-      13204: [382, 910],
-      13205: [382, 910],
-      13105: [382, 910],
-      13106: [382, 910],
-      13104: [382, 910],
-      13210: [382, 910],
-      "CP Lab 1/2": [580, 570],
-      "AI Lab": [600, 580],
-      "IT WS": [620, 590],
-      "ADS Lab": [660, 610],
-      14202: [382, 910],
-      14203: [382, 910],
-      14204: [382, 910],
-      12306: [382, 910],
-      12307: [382, 910],
-      12308: [382, 910],
-      "Diploma Block": [800, 680],
-      "Open Auditorium": [820, 690],
-      Garden: [840, 700],
-      Library: [318, 70],
-      "Main Seminar Hall": [880, 720],
-      "Entire Campus": [500, 500],
-      Campus: [510, 510],
-      "E-Classroom": [900, 730],
-      "Open Ground": [920, 740],
-      "C-Block": [640, 600],
-
-      // New Venues from new data
-      11101: [89, 261],
-      22304: [764, 334],
-      22008: [764, 334],
-      11002: [89, 261],
-      22208: [764, 334],
-      22007: [764, 334],
-      22009: [764, 334],
-      22115: [764, 334],
-      23210: [604, 340],
-      22006: [764, 334],
-      23203: [604, 340],
-      23214: [604, 340],
-      23213: [604, 340],
-      22301: [764, 334],
-      22101: [764, 334],
-      11007: [89, 261],
-      11009: [89, 261],
-      32004: [550, 555],
-      22312: [764, 334],
-      11204: [89, 261],
-    };
-
-    return fixedVenueCoords[venue] || [500, 500];
-  };
 
   const getIcon = (title) => {
     const t = (title || "").toLowerCase();
@@ -660,7 +659,8 @@ function processRawData(data) {
       student: item.student || "TBA",
       s_phone: item.student_mobile || "",
       venue: item.venue || "TBA",
-      coords: getCoords(item.venue),
+      block: item.Block,
+      coords: getCoords(item.Block),
       day: day,
       type: type,
       icon: item.icon || getIcon(title),
@@ -841,6 +841,8 @@ function populateDetails() {
   // Set map link
   document.getElementById("view-map-btn").onclick = () => {
     const params = new URLSearchParams({
+      id: event.id,
+      block: event.block,
       venue: event.venue,
       evt: event.title,
       dept: event.dept,
@@ -906,12 +908,37 @@ function initMap() {
   map.fitBounds(bounds);
 
   // Add custom markers?
+  const targetId = getQueryParam("id");
+  const targetBlock = getQueryParam("block");
   const targetVenue = getQueryParam("venue");
   const evtName = getQueryParam("evt");
   const evtDept = getQueryParam("dept");
 
-  if (targetVenue) {
-    const venueEvent = allEvents.find((e) => e.venue === targetVenue);
+  // Priority: Block > ID > Venue
+  if (targetBlock) {
+    const coords = getCoords(targetBlock);
+    if (coords) {
+      const marker = L.marker(coords).addTo(map);
+      let popupContent = "";
+      if (evtName) popupContent += `<b>${evtName}</b>`;
+      if (targetVenue && targetVenue !== "null")
+        popupContent += `<br>Room no : ${targetVenue}`;
+      if (evtDept)
+        popupContent += `<br><span style="font-size:0.9em; color:#666">Dept:${evtDept}</span>`;
+      marker.bindPopup(popupContent).openPopup();
+      map.panTo(coords);
+    }
+  } else if (targetId || targetVenue) {
+    let venueEvent = null;
+
+    if (targetId) {
+      venueEvent = allEvents.find((e) => e.id === targetId);
+    }
+
+    if (!venueEvent && targetVenue) {
+      venueEvent = allEvents.find((e) => e.venue === targetVenue);
+    }
+
     /* If venue not found in events list but exists in coords, we can look it up in coords directly? 
            For now relying on event object */
 
@@ -925,7 +952,7 @@ function initMap() {
     if (coords) {
       const marker = L.marker(coords).addTo(map);
 
-      let popupContent = `<b>${targetVenue}</b>`;
+      let popupContent = `<b>Room No.${targetVenue}</b>`;
       if (evtName)
         popupContent += `<br><span style="font-size:0.9em; color:#666">${evtName}</span>`;
       if (evtDept)
@@ -938,7 +965,18 @@ function initMap() {
   }
 
   // --- Dev Tool: Draggable Pin ---
-  // (Removed for production)
+
+  // const pin = L.marker([500, 500], { draggable: true }).addTo(map);
+  // pin.bindPopup("Drag me to see coords!").openPopup();
+  // pin.on("dragend", function (e) {
+  //   var coord = e.target.getLatLng();
+  //   var lat = coord.lat;
+  //   var lng = coord.lng;
+  //   console.log("[" + Math.round(lat) + ", " + Math.round(lng) + "]");
+  //   pin
+  //     .bindPopup("[" + Math.round(lat) + ", " + Math.round(lng) + "]")
+  //     .openPopup();
+  // });
 }
 
 // Initialize on load
