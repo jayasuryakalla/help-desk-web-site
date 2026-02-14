@@ -1,58 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Details</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="background-wrapper">
-        <div class="overlay-dark"></div>
-        <div class="particles"></div>
+      <div class="overlay-dark"></div>
+      <div class="particles"></div>
     </div>
 
-    <a href="events.html" class="back-btn"><i class="fas fa-arrow-left"></i> Events</a>
+    <a href="events.html" class="back-btn"
+      ><i class="fas fa-arrow-left"></i> Events</a
+    >
 
     <main class="details-container glass-panel" id="event-details-content">
-        <div class="details-header">
-            <h1 id="detail-title" class="neon-text">Event Title</h1>
-            <h3 id="detail-dept" style="color: var(--text-muted);">Department</h3>
+      <div class="details-header">
+        <h1 id="detail-title" class="neon-text">Event Title</h1>
+        <h3 id="detail-dept" style="color: var(--text-muted)">Department</h3>
+      </div>
+
+      <div class="details-info-grid">
+        <div class="info-item">
+          <span class="info-label">Faculty Coordinator</span>
+          <span id="detail-faculty" class="info-value">Name</span>
+          <div id="detail-fphone" style="font-size: 0.9rem; margin-top: 5px">
+            Phone
+          </div>
         </div>
 
-        <div class="details-info-grid">
-            <div class="info-item">
-                <span class="info-label">Faculty Coordinator</span>
-                <span id="detail-faculty" class="info-value">Name</span>
-                <div id="detail-fphone" style="font-size: 0.9rem; margin-top: 5px;">Phone</div>
-            </div>
-
-            <div class="info-item">
-                <span class="info-label">Student Coordinator</span>
-                <span id="detail-student" class="info-value">Name</span>
-                <div id="detail-sphone" style="font-size: 0.9rem; margin-top: 5px;">Phone</div>
-            </div>
-
-            <div class="info-item">
-                <span class="info-label">Venue</span>
-                <span id="detail-venue" class="info-value">Location</span>
-            </div>
-
-            <div class="info-item">
-                <span class="info-label">Category</span>
-                <span id="detail-type" class="info-value">Technical</span>
-            </div>
+        <div class="info-item">
+          <span class="info-label">Student Coordinator</span>
+          <span id="detail-student" class="info-value">Name</span>
+          <div id="detail-sphone" style="font-size: 0.9rem; margin-top: 5px">
+            Phone
+          </div>
         </div>
 
-        <button id="view-map-btn" class="btn-neon floaty">
-            <i class="fas fa-map-marked-alt"></i> View Venue on Map
-        </button>
+        <div class="info-item">
+          <span class="info-label">Room No</span>
+          <span id="detail-venue" class="info-value">Location</span>
+        </div>
+
+        <div class="info-item">
+          <span class="info-label">Block</span>
+          <span id="detail-block" class="info-value">Block Name</span>
+        </div>
+      </div>
+
+      <button id="view-map-btn" class="btn-neon floaty">
+        <i class="fas fa-map-marked-alt"></i> View Venue on Map
+      </button>
     </main>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

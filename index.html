@@ -33,13 +33,65 @@
       <!-- Hero Section -->
       <header class="hero-section">
         <div class="hero-content">
-          <img
-            src="anveshana_logo.png"
-            alt="Anveshana Logo"
-            class="hero-logo"
-          />
-          <h1 class="hero-title">ANVESHANA 2026</h1>
-          <p class="hero-tagline">IN SEARCH OF TALENT</p>
+          <div class="hero-branding">
+            <img
+              src="assets/anveshana_logo.png"
+              alt="Anveshana Logo"
+              class="hero-logo"
+            />
+            <h1 class="hero-title">ANVESHANA 2026</h1>
+            <p class="hero-tagline">IN SEARCH OF TALENT</p>
+
+            <div class="hero-meta">
+              <span>📅 Feb 27–28 2026</span>
+              <span class="divider">|</span>
+              <span>📍 SITE</span>
+            </div>
+          </div>
+
+          <!-- Sponsor Slider -->
+          <div class="sponsor-slider">
+            <div class="slider-track">
+              <!-- Duplicate logos for seamless scrolling -->
+              <div class="slide">
+                <img src="assets/logo.png" alt="Sponsor" />
+              </div>
+              <div class="slide">
+                <img src="assets/logo.png" alt="Sponsor" />
+              </div>
+              <div class="slide">
+                <img src="assets/logo.png" alt="Sponsor" />
+              </div>
+              <div class="slide">
+                <img src="assets/logo.png" alt="Sponsor" />
+              </div>
+              <div class="slide">
+                <img src="assets/logo.png" alt="Sponsor" />
+              </div>
+              <div class="slide">
+                <img src="assets/logo.png" alt="Sponsor" />
+              </div>
+              <!-- Duplicate set for seamless loop -->
+              <div class="slide">
+                <img src="assets/logo.png" alt="Sponsor" />
+              </div>
+              <div class="slide">
+                <img src="assets/logo.png" alt="Sponsor" />
+              </div>
+              <div class="slide">
+                <img src="assets/logo.png" alt="Sponsor" />
+              </div>
+              <div class="slide">
+                <img src="assets/logo.png" alt="Sponsor" />
+              </div>
+              <div class="slide">
+                <img src="assets/logo.png" alt="Sponsor" />
+              </div>
+              <div class="slide">
+                <img src="assets/logo.png" alt="Sponsor" />
+              </div>
+            </div>
+          </div>
 
           <div class="hero-cta-group">
             <button
@@ -55,12 +107,6 @@
               Campus Map
             </button>
           </div>
-
-          <div class="hero-meta">
-            <span>📅 Feb 27–28 2026</span>
-            <span class="divider">|</span>
-            <span>📍 SITE</span>
-          </div>
         </div>
       </header>
 
@@ -72,57 +118,18 @@
           vibrancy.
         </p>
         <div class="welcome-actions">
-          <button class="chip-btn" onclick="toggleDay(1)">
-            Day 1: Technical
+          <button
+            class="chip-btn"
+            onclick="window.location.href = 'events.html?section=tech'"
+          >
+            Technical Events
           </button>
-          <button class="chip-btn" onclick="toggleDay(2)">
-            Day 2: Cultural
+          <button
+            class="chip-btn"
+            onclick="window.location.href = 'events.html?section=cultural'"
+          >
+            Cultural & Fun
           </button>
-        </div>
-      </section>
-
-      <!-- Quick Access Cards -->
-      <section class="quick-access-grid">
-        <div
-          class="access-card glass-panel"
-          onclick="window.location.href = 'events.html'"
-        >
-          <div class="card-icon-bg">
-            <i class="fas fa-calendar-alt"></i>
-          </div>
-          <div class="card-text">
-            <h3>Full Schedule</h3>
-            <p>Browse all events</p>
-          </div>
-          <i class="fas fa-arrow-right card-arrow"></i>
-        </div>
-
-        <div
-          class="access-card glass-panel"
-          onclick="window.location.href = 'map2.html'"
-        >
-          <div class="card-icon-bg">
-            <i class="fas fa-map-marked-alt"></i>
-          </div>
-          <div class="card-text">
-            <h3>Event Map</h3>
-            <p>Find your way around</p>
-          </div>
-          <i class="fas fa-arrow-right card-arrow"></i>
-        </div>
-
-        <div
-          class="access-card glass-panel"
-          onclick="window.location.href = 'help.html'"
-        >
-          <div class="card-icon-bg">
-            <i class="fas fa-headset"></i>
-          </div>
-          <div class="card-text">
-            <h3>Help Desk</h3>
-            <p>Need assistance?</p>
-          </div>
-          <i class="fas fa-arrow-right card-arrow"></i>
         </div>
       </section>
 

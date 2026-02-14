@@ -134,9 +134,78 @@ p {
   min-height: 80vh; /* Takes up most of the screen */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* Align to center */
   align-items: center;
-  padding-top: 6rem;
+  padding-top: 0; /* Remove top padding to let flexbox center it */
+  gap: 2rem;
+}
+
+.hero-branding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Sponsor Slider */
+.sponsor-slider {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: 40px;
+  overflow: hidden;
+  padding: 1rem 0;
+
+  /* Fade edges for smooth look */
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  );
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+  gap: 4rem;
+  padding: 1rem 1rem;
+}
+
+.slide img {
+  height: 50px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.slide img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Move by half the total width (one set of slides) */
+  }
 }
 
 .hero-logo {
@@ -158,7 +227,7 @@ p {
   font-size: 1rem;
   letter-spacing: 4px;
   text-transform: uppercase;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
   opacity: 0.8;
 }
 
@@ -169,6 +238,13 @@ p {
   width: 100%;
   max-width: 300px;
   margin-bottom: 3rem;
+  margin-top: 20px;
+  margin-left: 10px;
+  align-items: center; /* Center buttons horizontally */
+}
+
+.hero-cta-group button {
+  width: 100%;
 }
 
 /* Modern Buttons */
@@ -215,6 +291,7 @@ button:active {
   font-size: 0.9rem;
   color: var(--text-secondary);
   flex-wrap: wrap;
+  margin-bottom: 2.5rem;
 }
 
 .divider {
@@ -239,17 +316,24 @@ button:active {
 }
 
 .chip-btn {
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--text-secondary);
-  padding: 0.6rem 1.2rem;
-  font-size: 0.9rem;
-  border: 1px solid var(--glass-border);
+  background: rgba(11, 15, 26, 0.6);
+  color: var(--text-primary);
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid var(--accent-secondary);
   border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.2);
+  transition: all 0.3s ease;
 }
 
 .chip-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: var(--accent-secondary);
+  color: #0b0f1a;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.5);
+  transform: translateY(-2px);
 }
 
 /* --- Quick Access Cards --- */
@@ -715,4 +799,106 @@ button:active {
     var(--accent-secondary)
   );
   box-shadow: 0 4px 15px rgba(124, 92, 255, 0.3);
+}
+
+/* --- New Department Tabs System --- */
+.dept-tabs-sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 10px 0;
+  background: rgba(11, 15, 26, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  /* Expand to cover container padding */
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dept-tabs-scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  /* Hide scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  position: relative;
+  padding-bottom: 5px; /* Space for shadow if needed */
+}
+
+.dept-tabs-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.dept-tabs-list {
+  display: inline-flex;
+  position: relative;
+  background: rgba(255, 255, 255, 0.05); /* Track background */
+  border-radius: 30px;
+  padding: 5px;
+  border: 1px solid var(--glass-border);
+}
+
+.dept-tab-btn {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.dept-tab-btn:hover {
+  color: var(--text-primary);
+}
+
+.dept-tab-btn.active {
+  color: #fff;
+  /* Visual reordering: Active tab moves to start */
+  order: -1;
+  /* Sticky behavior: stays at left if scrolled */
+  position: sticky;
+  position: -webkit-sticky;
+  left: 0;
+  z-index: 10;
+
+  /* Neon Gradient Background */
+  background: linear-gradient(
+    135deg,
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 4px 0 15px rgba(124, 92, 255, 0.4);
+}
+
+/* Sliding Indicator Removed - Gradient is now on the button itself */
+
+@media (max-width: 768px) {
+  .dept-tabs-sticky {
+    margin-left: -1rem; /* Container padding adaptation */
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    top: 60px; /* Below hero/nav if sticky there */
+  }
+
+  .dept-tab-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
 }

@@ -29,7 +29,7 @@
     </header>
 
     <main class="container">
-      <!-- Day Toggle -->
+      <!-- Section Toggle (Tech vs Cultural) -->
       <div
         class="day-toggle-container glass-panel"
         style="
@@ -39,14 +39,24 @@
           align-self: center;
         "
       >
-        <button class="day-btn active" onclick="toggleDay(1)">
-          Day 1 (Tech)
+        <button
+          id="btn-tech"
+          class="day-btn active"
+          onclick="switchSection('tech')"
+        >
+          Technical Events
         </button>
-        <button class="day-btn" onclick="toggleDay(2)">Day 2 (Cultural)</button>
+        <button
+          id="btn-cultural"
+          class="day-btn"
+          onclick="switchSection('cultural')"
+        >
+          Cultural & Fun
+        </button>
       </div>
 
-      <!-- Day 1 Section -->
-      <div id="day1-section">
+      <!-- Technical Section -->
+      <div id="tech-section">
         <h2
           style="
             border-bottom: 1px solid var(--accent-primary);
@@ -55,15 +65,23 @@
             color: var(--accent-primary);
           "
         >
-          Day 1: Technical Events
+          Technical Events 
         </h2>
-        <div id="day1-grid">
-          <!-- Javascript will populate this -->
+
+        <!-- Horizontal Scrollable Tabs for Departments -->
+        <div class="dept-tabs-wrapper">
+          <div id="dept-tabs-container">
+            <!-- Tabs will be injected here by JS -->
+          </div>
+        </div>
+
+        <div id="tech-events-grid" class="accordion-container">
+          <!-- Javascript will populate this with event cards -->
         </div>
       </div>
 
-      <!-- Day 2 Section -->
-      <div id="day2-section" style="margin-top: 4rem">
+      <!-- Cultural Section (Initially Hidden) -->
+      <div id="cultural-section" style="display: none">
         <h2
           style="
             border-bottom: 1px solid var(--accent-secondary);
@@ -72,9 +90,9 @@
             color: var(--accent-secondary);
           "
         >
-          Day 2: Cultural & Fun
+          Cultural & Fun Events
         </h2>
-        <div id="day2-grid">
+        <div id="cultural-events-grid" class="accordion-container">
           <!-- Javascript will populate this -->
         </div>
       </div>
